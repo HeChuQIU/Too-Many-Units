@@ -1,7 +1,22 @@
 <Project Sdk="Godot.NET.Sdk/4.1.2">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>TooManyUnits</RootNamespace>
+    <LangVersion>11</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Core\Data\" />
+    <Folder Include="Core\Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LanguageExt.Core" Version="4.4.7" />
+    <PackageReference Include="LanguageExt.FSharp" Version="4.4.7" />
+    <PackageReference Include="LanguageExt.Rx" Version="4.4.7" />
+    <PackageReference Include="System.Interactive" Version="6.0.1" />
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+    <PackageReference Include="System.Reactive" Version="6.0.0" />
+    <PackageReference Include="System.Reactive.Async" Version="6.0.0-alpha.18" />
+  </ItemGroup>
 </Project>
